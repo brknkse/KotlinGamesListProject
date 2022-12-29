@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GamesFragment" >
+
+    <TextView
+
+        android:id="@+id/textView21"
+        android:layout_width="111dp"
+        android:layout_height="41dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="9dp"
+        android:text="Games"
+        android:textSize="34dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:lineSpacingExtra="0sp"
+        android:translationY="-0.21sp"
+        android:gravity="top"/>
+
+    <SearchView
+        android:id="@+id/searchVİew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search for the games"
+        android:iconifiedByDefault="false"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/searchview_background"
+        android:queryBackground="@android:color/transparent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_item"
+        />
+
+
+
+
+</LinearLayout>
